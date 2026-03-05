@@ -20,7 +20,45 @@
 }
 
 body {
-  background: var(--background);
+  /* background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;   
+  font-family: Arial; */
+  background: linear-gradient(to left, #560c8b, #6a0dad, #7734b4);
+  /* #6a0dad */
+  /* overflow: hidden; */
+  min-height: 100vh;
+  z-index: -1;
+  color: white;
+}
+
+@theme {
+  --animate-glow: glow 1s linear infinite;
+  --animate-shake: shake 0.5s linear infinite;
+}
+
+@keyframes glow {
+  50% {
+    box-shadow: 5px 5px 0px #d8b4fe;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
