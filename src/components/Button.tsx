@@ -12,7 +12,7 @@ export default function Button({ handleClick, show }: Props) {
       <button
         onClick={handleClick}
         className={`
-           p-3 md:p-4 cursor-pointer hover:animate-shake  flex items-center justify-center
+           p-3 md:p-4 cursor-pointer  flex items-center justify-center
           ${!show && "animate-shake"}`}
       >
         {show ? " 😉 تشوفيها تاني" : "😁 ادخلي برجلك اليمين يا مزة "}

@@ -16,7 +16,7 @@ export default function Home() {
   }
   return (
     <main>
-      <div className="fixed md:left-1/2 md:-translate-x-1/2 m-4 md:m-0 md:mt-5 ">
+      <div className="fixed left-1/2 -translate-x-1/2 md:m-0 md:mt-5 w-[90%] md:w-fit mt-4  ">
         {isOn && <Card show={isOn} />}
       </div>
       <Button handleClick={handleClick} show={isOn} />
